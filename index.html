@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/browse/reset-css@5.0.2/reset.css" /> -->
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Fabian Urner">
+  <meta name="description" content="description">
+  <title>ToDo-App with REST Backend</title>
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main class="main">
+    <form action="#" onsubmit="" class="add-todo" id="add-todo">
+      <input type="text" id="todo-text" name="todo-text" placeholder="Get sh*t done!">
+      <input type="submit" id="btn-todo-add" value="add">
+    </form>
+
+    <fieldset class="filter" id="filter">
+      <legend>Filter & Options</legend>
+
+      <span>
+        <input type="radio" id="all" name="filter" value="all" checked />
+        <label for="all">All</label>
+      </span>
+
+      <span>
+        <input type="radio" id="open" name="filter" value="open" />
+        <label for="open">Open</label>
+      </span>
+
+      <span>
+        <input type="radio" id="done" name="filter" value="done" />
+        <label for="done">Done</label>
+      </span>
+    </fieldset>
+
+    <button id="btn-remove-done">Remove Done Todos</button>
+
+    <fieldset class="todoListSection">
+      <legend class="todoListTitle">Your Todos</legend>
+
+      <ul id="todoList">
+      </ul>
+
+    </fieldset>
+
+
+  </main>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
